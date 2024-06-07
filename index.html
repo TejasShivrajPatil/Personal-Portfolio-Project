@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEJAS Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <img src="portfolio-logo.png" alt="Protfolio-Logo" class="pf-logo">
+            <img src="sun.png" alt="sun-icon" id="icon">
+            <input type="checkbox" id="menu-click">
+            <label for="menu-click" class="menu-btn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <div class="nav-items">
+                <li><a href="#intro" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certification</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </div>         
+        </nav>
+
+        <script>
+            var icon= document.getElementById("icon");
+
+            icon.onclick=function(){
+                document.body.classList.toggle("light-theme");
+                if(document.body.classList.contains("light-theme")){
+                    icon.src= "moon.png";                       
+                }
+                else{
+                    icon.src="sun.png";
+                }
+            }
+        </script>
+
+    </header>
+
+    <!-- Home Page -->
+    <main>
+        <article class="intro" id="intro">
+            <div class="intro-items">
+                <span>Hi, Its me</span>
+                <span>Tejas Patil</span>
+                <div>And I'm a   <span>Full Stack Developer</span></div>
+                <button class=" btns home-btns">Download Resume</button>
+                <button class=" btns home-btns">Invite for Interview</button>
+            </div>
+            <img src="portfolio-profile-pic.png" alt="portfolio-profile-pic" class="portfolio-profile-pic">
+           <div class="social-media-logos"> 
+               
+                  <li><a href="#"><img src="insta-png.png" alt="insta-logo"></a></li>
+                  <li><a href="#"><img src="twitter-png (1).png" alt="twwitter-logo"></a></li>
+                  <li><a href="#"><img src="linkedin-png.png" alt="kinkedin-logo"></a></li>
+                  <li><a href="#"><img src="facebok-png.png" alt="facebook-logo"></a></li>
+              
+           </div>
+        </article>
+
+        <div class="seperation"> </div>
+
+        <!-- About Page -->
+        <section id="about">
+
+            <img src="profile pic1.jpg" alt="profile pic1" class="profile-pic pic1">
+            <div class="profile-content">
+                <h2>
+                    About me
+                </h2>
+                <p>Welcome to my personal portfolio! let me take a moment to introduce myself amidst the pixels and
+                    code. I'm Tejas Patil, a Full Stack Web Developer with a fervent curiosity for innovation and a
+                    penchant for problem-solving.</p>
+                <p> I'll introduce myself, providing a glimpse into my journey, expertise,
+                    and the values that drive me. Whether it's my academic background, professional accomplishments, or
+                    personal interests, this section aims to leave visitors with a clear understanding of who I am, what
+                    I bring to the table, and why I'm passionate about what I do.</p>
+                <p>
+                    "Join me on the journey to bring your vision to life, one pixel at a time."
+                </p>
+                <button class="btns">Read more..</button>
+            </div>
+            <img src="profile pic3.jpg" alt="profile pic2" class="profile-pic pic2">
+        </section>
+
+        <div class="seperation"> </div>
+
+        <!-- Skills Page -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <article class="skills-box">
+                <p>HTML & CSS</p>
+                <div class="container">
+                    <div class="skills html-css">95%</div>
+                </div>
+
+                <p>Javascript</p>
+                <div class="container">
+                    <div class="skills Javascript">90%</div>
+                </div>
+
+                <p>Node Js</p>
+                <div class="container">
+                    <div class="skills Node-Js">80%</div>
+                </div>
+
+                <p>MongoDb</p>
+                <div class="container">
+                    <div class="skills MongoDb">90%</div>
+                </div>
+
+                <p>MERN Stack</p>
+                <div class="container">
+                    <div class="skills MERN-Stack">70%</div>
+                </div>
+
+                <p>Express</p>
+                <div class="container">
+                    <div class="skills Express">85%</div>
+                </div>
+
+                <p>React Js</p>
+
+                <div class="container">
+                    <div class="skills React-Js">90%</div>
+                </div>
+
+            </article>
+        </section>
+
+        <div class="seperation"> </div>
+
+        <!-- Certifications Page -->
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <article class="certification-box">
+                <div class="box box1">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 48 48">
+                        <path fill="#388E3C" d="M41 42L7 42 12 37 36 37z"></path>
+                        <path fill="#388E3C" d="M19 32.875H29V37.875H19z"></path>
+                        <path fill="#4CAF50"
+                            d="M42,33c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2V8c0-1.104,0.896-2,2-2h32c1.104,0,2,0.896,2,2V33z">
+                        </path>
+                        <path fill="#1B5E20" d="M9 9H39V31.875H9z"></path>
+                        <g>
+                            <path fill="#66BB6A" d="M15.551 11.893H18.551000000000002V22.893H15.551z"
+                                transform="rotate(44.992 17.051 17.394)"></path>
+                            <path fill="#66BB6A" d="M15.55 17.55H18.55V28.55H15.55z"
+                                transform="rotate(-45.017 17.048 23.049)"></path>
+                            <path fill="#66BB6A" d="M29.55 11.893H32.55V22.893H29.55z"
+                                transform="rotate(134.999 31.05 17.393)"></path>
+                            <path fill="#66BB6A" d="M29.55 17.55H32.55V28.55H29.55z"
+                                transform="rotate(-134.983 31.051 23.05)"></path>
+                        </g>
+                    </svg>
+                    <h3 class="Cert-Heading"> Web Development </h3>
+                    <p>In the course of Web Development , I have learned HTML, CSS, JS and React for the frontend part.
+                        And for the backend I have learned Node Js, Express Js.</p>
+                    <p>In this course I have made some demo projects like Blogging website and Portfolio website which
+                        is totally responsive. It can adapt to any screen sizes.</p>
+                    <a href="https://drive.google.com/file/d/1p7mIoRlIVWDtlTz7uitA0ByzqV4xCorv/view?usp=sharing" target="_blank"><button class="btns"> Certificate</button></a>
+                </div>
+                <div class="box box2">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0,0,256,256">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(5.33333,5.33333)">
+                                <path d="M16,28.505v9c0,2.485 6.044,4.5 13.5,4.5c7.456,0 13.5,-2.015 13.5,-4.5v-9z"
+                                    fill="#528814"></path>
+                                <path d="M16,19.505v9c0,2.485 6.044,4.5 13.5,4.5c7.456,0 13.5,-2.015 13.5,-4.5v-9z"
+                                    fill="#5baf20"></path>
+                                <path d="M16,10.505v9c0,2.485 6.044,4.5 13.5,4.5c7.456,0 13.5,-2.015 13.5,-4.5v-9z"
+                                    fill="#7ac94f"></path>
+                                <path
+                                    d="M29.5,6.005c-7.45584,0 -13.5,2.01472 -13.5,4.5c0,2.48528 6.04416,4.5 13.5,4.5c7.45584,0 13.5,-2.01472 13.5,-4.5c0,-2.48528 -6.04416,-4.5 -13.5,-4.5z"
+                                    fill="#8ee080"></path>
+                                <path
+                                    d="M25.433,23.796v-6.698c-0.003,-0.92 -0.747,-1.664 -1.667,-1.667h-7.766v4.073c0,2.013 3.966,3.717 9.433,4.292z"
+                                    fill="#993c49"></path>
+                                <path
+                                    d="M16,19.505v9c0,2.013 3.966,3.716 9.433,4.291v-9c-5.467,-0.575 -9.433,-2.279 -9.433,-4.291z"
+                                    fill="#941b29"></path>
+                                <path
+                                    d="M16,28.505v6.931h7.439c1.049,-0.068 1.894,-0.888 1.994,-1.935v-0.705c-5.467,-0.575 -9.433,-2.279 -9.433,-4.291z"
+                                    fill="#6e101b"></path>
+                                <path
+                                    d="M22.319,34h-16.638c-0.928,0 -1.681,-0.753 -1.681,-1.681v-16.638c0,-0.928 0.753,-1.681 1.681,-1.681h16.638c0.928,0 1.681,0.753 1.681,1.681v16.638c0,0.928 -0.753,1.681 -1.681,1.681z"
+                                    fill="#5baf20"></path>
+                                <path
+                                    d="M12.923,19.005h2.266l3.64,10h-2.141l-0.802,-2.385h-3.745l-0.788,2.385h-2.126zM15.406,25.078l-1.165,-3.619c-0.096,-0.265 -0.168,-0.538 -0.216,-0.816h-0.042c-0.044,0.285 -0.114,0.565 -0.209,0.837l-1.179,3.598z"
+                                    fill="#ffffff"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <h3 class="Cert-Heading">Database Management</h3>
+                    <p>In DBMS I have covered Database Fundamentals, SQL, Database Design, Data Integrity and Security
+                        and Database Administration</p>
+                    <p>Using this practical knowledge I have made some projects related to Business and Enterprise
+                        Systems, E-commerce Platforms, Education and Research and Online Media and Content Platforms</p>
+                   <a href="https://drive.google.com/file/d/1pLCuee2iiT5aEjJHP-3gq_0XJVntKWY_/view?usp=sharing" target="_blank"> <button class="btns"> Certificate</button></a>
+                </div>         
+                <div class="box box3">
+                    <img src="https://static.thenounproject.com/png/1870030-200.png" alt="Machine-learning-logo" width="100" height="100">
+                    <h3 class="Cert-Heading"> Machine Learning</h3>
+                    <p>In this course I learned Fundamental Concepts, Data Preprocessing and Exploration, Machine Learning Algorithms, and Model Evaluation and Validation</p>
+                    <p>Using this knowledge in machine learning I made some projects related Healthcare, Marketing and Advertising, Transportation and Logistics and E-commerce and Retail</p>  
+                   <a href="https://drive.google.com/file/d/1p7KnuMrSPca9ePJhgF5_Vt0KqRZ41lNy/view?usp=sharing" target="_blank"><button class="btns"> Certificate</button></a> 
+                </div>          
+            </article>
+        </section>
+
+        <div class="seperation"> </div>
+
+        <!-- Project Page -->
+
+        <section id="projects"> 
+
+            <h2 class="section-title">Recent Projects</h2>
+
+            <div class="project-container">
+                <article class="project-card">
+                    <a  class="project-link">
+                        <h3 class="project-title">Restaurant Website</h3>
+                        <p class="project description">This is an online restaurant where user can serch different food items, order food and pay the prize by UPI methods</p>
+                        <img src="projectsection-pic1.webp" alt="restaurant image" class="project-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <a  class="project-link">
+                        <h3 class="project-title">Design of Products</h3>
+                        <p class="project description">This project is all about designing of product. How to design and visualize product online.</p>
+                        <img src="projectsection-pic2.jpg" alt="restaurant image" class="project-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <a  class="project-link">
+                        <h3 class="project-title">Barbershop Website</h3>
+                        <p class="project description">This is an website for user to search opened barbershops in nearby area and to book an appointment</p>
+                        <img src="projectsection-pic3.webp" alt="restaurant image" class="project-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>                    </a>
+                </article>
+
+                <article class="project-card">
+                    <a   class="project-link">
+                        <h3 class="project-title">Coffee Shop Website</h3>
+                        <p class="project description">Inn this website User can search coffe shops in nearby area. and user can also order online some items from the shop and pay using UPI </p>
+                        <img src="projectsection-pic4.jpg" alt="restaurant image" class="project-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>                    </a>
+                </article>
+
+                <article class="project-card">
+                    <a  class="project-link">
+                        <h3 class="project-title">Online Pet Store</h3>
+                        <p class="project description">This website provides users any necessaary thing about theit pet from their toys to their medicines. just everything!</p>
+                        <img src="projectsection-pic5.avif" alt="restaurant image" class="project-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>                    </a>
+                </article>
+
+                <article class="project-card">
+                    <a  class="project-link">
+                        <h3 class="project-title">Online Cloth Store</h3>
+                        <p class="project description">Using this website user can search any kind of clothes all over India and order online and pay using UPI or cash on delivery.</p>
+                        <img src="projectsection-pic6.jpg" alt="restaurant image" class="project-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>                    </a>
+                </article>
+            </div>
+        </section>
+
+        <div class="seperation"> </div>
+
+        <!-- Contact me section -->
+
+        <section class="contact" id="contact">
+            <h2 class="contact-title"> Contact Me</h2>
+            <form action="">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Email address">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Phone Number">
+                        <input type="number" placeholder=" Alternate Phone Number">
+                    </div>
+                </div>
+                <div class="input-group-2">
+                    <textarea name="" id="" cols="20" rows="13" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btns">
+                </div>
+            </form>
+        </section>
+    </main>
+     
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+        
+        <div class="social">
+            <a href="#"><img src="insta-png.png" alt="insta-logo"></a>
+            <a href="#"><img src="twitter-png (1).png" alt="twwitter-logo"></a>
+            <a href="#"><img src="linkedin-png.png" alt="kinkedin-logo"></a>
+            <a href="#"><img src="facebok-png.png" alt="facebook-logo"></a>
+        </div>
+       
+
+        <ul class="list">
+             <li>
+                <a href="#intro">Home</a>
+             </li>
+             <li>
+                <a href="#about">About</a>
+             </li>
+             <li>
+                <a href="#skills">Skills</a>
+             </li>
+             <li>
+                <a href="#certifications">Certification</a>
+             </li>
+             <li>
+                <a href="#projects">Projects</a>
+             </li>
+             <li>
+                <a href="#contact">Contact me</a>
+             </li>
+        </ul>
+        <hr>
+        <p class="copyright">
+            © Tejas Patil || All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

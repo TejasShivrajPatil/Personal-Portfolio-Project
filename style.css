@@ -1,0 +1,923 @@
+/*________________________________________________________  Navigation Menu Styling________________________________________________________  */
+* {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family:'Times New Roman', Times, serif
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --background-color:black;
+    --text-color:white;
+    --box-background-color:  rgb(41, 41, 41); 
+    --heading-color:rgb(255, 106, 0);
+}
+
+.light-theme{
+    --background-color:rgb(255, 255, 255);
+    --text-color:black;
+    --box-background-color:rgb(213, 212, 255); 
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vw;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.pf-logo {
+    width: 100px;
+    height: 48px;
+    background-color: rgb(125, 136, 69);
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: var(--heading-color);
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items li {
+    list-style-type: none;
+    padding: 5px 10px;
+    margin: 0px 5px
+}
+
+.nav-items li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--text-color);
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.nav-items li a:hover,
+.nav-items li a.active{
+    color: rgb(0, 179, 255);
+    box-shadow: 3px 3px 10px rgb(0, 179, 255), -3px -3px 10px rgb(0, 179, 255);
+    background-color: var(--background-color)
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+nav .menu-btn i{
+    color: var(--text-color) ;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-click{
+    display: none;
+}
+
+.seperation {
+    width: 100vw;
+    height: 10px;
+    background-color: rgb(40, 40, 40);
+}
+
+/* ________________________________________________________ Home Page Styling ________________________________________________________ */
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.intro-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text-color);
+    gap: 10px;
+}
+
+.intro-items>span:nth-child(1) {
+    font-size: 24px;
+
+}
+
+.intro-items>span:nth-child(2) {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+.intro-items>div>span {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+.btns {
+    padding: 15px;
+    border-radius: 80px;
+    background-color:  rgb(0, 179, 255);
+    font-weight: bold;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.btns:hover {
+    color: rgb(0, 179, 255);
+    box-shadow: 3px 3px 10px rgb(0, 179, 255), -3px -3px 10px rgb(0, 179, 255);
+    background-color: var(--background-color)
+}
+
+.portfolio-profile-pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: scale-pic;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes scale-pic {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 20px;
+        box-shadow: 8px 8px 15px var(--heading-color), -8px -8px 15px var(--heading-color);
+    }
+}
+
+.social-media-logos {
+    display: flex;
+    align-items: end;
+    list-style-type: none;
+    
+}
+
+.social-media-logos img {
+    margin: 10px;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    transition: all 0.2s ease-out;
+    background-color: var(--box-background-color)
+}
+
+.social-media-logos img:hover {
+    transform: scale(1.2) translateY(-10px);
+    box-shadow: 3px 3px 10px  rgb(0, 179, 255), -3px -3px 10px  rgb(0, 179, 255);;
+}
+
+
+/*________________________________________________________ About Page Styling________________________________________________________ */
+
+#about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 20px;
+    gap: 50px;
+}
+
+.profile-pic {
+    border-radius: 50px;
+    margin: 20px;
+    border: 3px solid rgb(105, 105, 105);
+}
+
+.pic1 {
+    width: 400px;
+    height: 600px;
+}
+
+.pic2 {
+    width: 400px;
+    height: 600px;
+}
+
+.profile-content {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about>div>h2 {
+    font-size: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--heading-color);
+
+}
+
+.profile-content>p:nth-child(4) {
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+    background-color: var(--box-background-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+
+/*________________________________________________________ Skills Page Styling________________________________________________________ */
+
+
+#skills {
+    box-sizing: border-box;
+    color: var(--text-color);
+    max-width: 50vw;
+    margin: 30px auto;
+}
+
+#skills h2 {
+    font-size: 36px;
+    text-align: center;
+    color: var(--heading-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.skills-box {
+    background-color: var(--box-background-color);
+    padding: 30px;
+    border-radius: 30px;
+    border: 1px solid rgb(105, 105, 105);
+}
+
+.skills-box p {
+    font-weight: 600;
+}
+
+.container {
+    width: 100%;
+    background-color: grey;
+    border-radius: 40px;
+    line-height: 1;
+}
+
+.skills {
+    text-align: right;
+    color: var(--text-color);
+    border-radius: 40px;
+    padding: 2px 0px;
+}
+
+.html-css {
+    width: 95%;
+    background-color: rgb(26, 131, 0);
+}
+
+.Javascript {
+    width: 90%;
+    background-color: rgb(26, 131, 0);
+}
+
+.Node-Js {
+    width: 80%;
+    background-color: rgb(26, 131, 0);
+}
+
+.MongoDb {
+    width: 90%;
+    background-color: rgb(26, 131, 0);
+}
+
+.MERN-Stack {
+    width: 70%;
+    background-color: rgb(26, 131, 0);
+}
+
+.Express {
+    width: 85%;
+    background-color: rgb(26, 131, 0);
+}
+
+.React-Js {
+    width: 90%;
+    background-color: rgb(26, 131, 0);
+}
+
+
+
+/*________________________________________________________ Certifications Page Styling________________________________________________________ */
+
+#certifications h2 {
+    font-size: 36px;
+    text-align: center;
+    color:var(--heading-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.certification-box{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding: 40px;
+    color: var(--text-color);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 40%;
+    background-color: var(--box-background-color);
+    border-radius: 50px;
+    position: relative;
+    transition:all .4s ;
+}
+
+
+.box:hover{
+   box-shadow:5px 5px 10px rgb(0, 179, 255), -5px -5px 10px rgb(0, 179, 255); ;
+   transform: translateY(-1rem);
+}
+
+
+.Cert-Heading{
+    font-size: 24;
+    text-align: center;
+    color:var(--heading-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+/*________________________________________________________ Projects Page Styling________________________________________________________ */
+
+.section-title{
+    font-size: 36px;
+    text-align: center;
+    color: var(--heading-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: center;
+   align-items:center;
+}
+
+.project-card{
+    background-color: rgb(14, 0, 141);
+    margin: 50px;
+    border-radius: 50px;
+}
+
+.project-link{
+   display: block;
+   position: relative;
+   background-color:  var(--box-background-color);
+   padding: 2rem;
+   color: var(--text-color);
+   text-decoration: none;
+   transition: all .4s;
+   border-radius: 50px;
+   line-height: 2rem;
+   text-align: center;
+}
+
+.project-title{
+    text-align: center;
+    color: var(--heading-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project-img{
+    width: 400px;
+    height: 300px;
+    opacity: 0.5;
+    border-radius: 50px;
+}
+
+.project-link svg{
+    position: absolute;
+    top: 1.8rem;
+    right: 1.8rem;
+    font-size: 1.5rem;
+    color: rgb(111, 111, 111);
+    transition: transform .4s;
+}
+
+.project-link:hover{
+    transform: translateY(-.7rem);
+    cursor: pointer;
+}
+
+.project-link:hover svg{
+    transform: translateX(.5rem);
+} 
+
+
+/*________________________________________________________ Contact Page Styling________________________________________________________ */
+
+
+.contact-title{
+    font-size: 36px;
+    text-align: center;
+    color: var(--heading-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 5rem auto;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    background-color: var(--box-background-color);
+    width: 80%;
+    padding: 20px;
+    margin: 16px 10px;
+    border-radius: 1rem;
+    border: 1px solid rgb(105, 105, 105);
+    transition: all .4s;
+}
+
+.contact form .input-box input:hover{
+    border: 2px solid rgb(0, 170, 255);
+    box-shadow:3px 3px 10px rgb(0, 179, 255), -3px -3px 10px rgb(0, 179, 255); ;
+}
+.contact form textarea:hover{
+    border: 2px solid rgb(0, 170, 255);
+    box-shadow:3px 3px 10px rgb(0, 179, 255), -3px -3px 10px rgb(0, 179, 255); ;
+} 
+
+
+
+/*________________________________________________________ Foooter Styling________________________________________________________ */
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px, 0;
+
+}
+
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .social img{
+   background-color: var(--box-background-color);
+   width: 45px;
+   height: 45px;
+   line-height: 42px;
+   display: inline-block;
+   text-align: center;
+   border-radius: 50%;
+   margin: 0px 20px;
+   padding: 2px;
+   transition: all .2s ease-in-out;
+   border: 2px solid var(--text-color);
+}
+
+.footer .social img:hover{
+    transform: scale(1.2) translateY(-10px);
+    box-shadow: 3px 3px 10px rgb(0, 179, 255), -3px -3px 10px rgb(0, 179, 255);
+}
+
+.footer ul{
+   
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a{
+    color:var(--text-color);
+    text-decoration: none;
+}
+
+.footer ul li a:hover{
+    border-bottom: 2px solid var(--text-color);
+}
+
+.footer .copyright{
+    /* margin-top: 50px; */
+    text-align: center;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+
+
+/*________________________________________________________ CSS code for responsiveness________________________________________________________ */
+/*________________________________________________________ Media Queries________________________________________________________ */
+
+/* Media Queries for Desktop or Laptop */
+
+/* @media screen and (max-width:1120px){
+
+    #about{
+        flex-wrap: wrap;
+    }
+
+    div.profile-content{
+        width: 70vw;
+    }
+
+    #skills{
+        max-width: 60%;
+    }
+
+    .certification-box{
+        flex-wrap: wrap;
+    }
+
+    div.box{
+        width: 80%;
+    }
+
+    .project-container{
+        grid-template-columns: 1fr ;
+       align-items:  center;
+    }
+
+    .project-containe>article.project-card{
+        width: 60%;
+    }
+
+    .project-containe>article.project-link{
+        width: 60%;
+    }
+
+    .contact form{
+        width: 90%;
+    }
+
+
+
+
+} */
+
+
+
+/* Combined Media Queries for laptop or desktop And Ipad Mini */
+
+@media screen and (min-width:580px) and (max-width:1120px){
+
+    header{
+        width: 100vw;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: 100vw;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        gap: 40px;   
+    }
+
+    .intro-items:nth-child(1){
+        display: flex;
+        align-items: center;
+       
+    }
+
+    .intro .social-media-logos{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #about{
+        flex-wrap:wrap;
+    }
+
+    div.profile-content{
+        width: 70vw;
+    }
+
+    #skills{
+        max-width: 70%;
+    }
+
+    .certification-box{
+        flex-wrap: wrap;
+    }
+
+    div.box{
+        width: 80%;
+    }
+
+    .project-container{
+        grid-template-columns: 1fr ;
+    }
+
+    .contact form{
+        width: 90%;
+    }
+}
+
+
+/* Media Query for smaller screen size devices */
+
+@media screen and (min-width:450px) and (max-width:580px){
+    .nav-items{
+        position: absolute;
+        top: 90px;
+        left: -100%;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        text-align: center;
+        background-color: var(--background-color);
+        transition: all 0.3s linear;
+    }
+
+    .nav-items li{
+        margin: 25px 0px;
+    }
+
+    .nav-items li a{
+        font-size: 24px;
+    }
+
+    nav .menu-btn i{
+        display: block;
+    }
+
+    #menu-click:checked ~ .nav-items{
+        left: 0;
+    }
+
+    #menu-click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+
+    
+    header{
+        width: 100vw;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60vw;
+        gap: 40px;   
+        margin: auto;
+    }
+
+    .intro-items:nth-child(1){
+        display: flex;
+        align-items: center;
+       
+    }
+
+    .intro .social-media-logos{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #about{
+        flex-wrap:wrap;
+    }
+    div.profile-content{
+        width: 70vw;
+    }
+
+    #skills{
+        max-width: 70%;
+    }
+
+    .certification-box{
+        flex-wrap: wrap;
+    }
+
+    div.box{
+        width: 80%;
+    }
+
+    .project-container{
+        grid-template-columns: 1fr ;
+    }
+
+    .contact form{
+        width: 90%;
+    }
+
+    
+}
+
+
+/* Media Query for Samsung galaxy S8+ */
+
+@media screen and (max-width:450px){
+
+    .nav-items{
+        position: absolute;
+        top: 90px;
+        left: -100%;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        text-align: center;
+        background-color: var(--background-color);
+        transition: all 0.3s linear;
+    }
+
+    .nav-items li{
+        margin: 25px 0px;
+    }
+
+    .nav-items li a{
+        font-size: 24px;
+    }
+
+    nav .menu-btn i{
+        display: block;
+    }
+
+    #menu-click:checked ~ .nav-items{
+        left: 0;
+    }
+
+    #menu-click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 80vw;
+        gap: 40px;   
+        margin: 20px;
+        padding: 20px;
+    }
+
+    div.intro-items{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 15px;
+       
+    }
+
+    .intro-items>span:nth-child(1){
+        font-size: 18px;
+    }
+
+    .intro-items>span:nth-child(2){
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .intro-items>div>span{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    img.portfolio-profile-pic{
+        width: 250px;
+        height: 250px;
+        right: 20px;
+    }
+
+    .social-media-logos{
+        position: relative;
+        right: 30px;
+    }
+    .social-media-logos img{
+        margin: 5px 8px;
+    }
+
+    #about{
+        flex-wrap:wrap;
+    }
+
+    #about .profile-pic{
+        width: 300px;
+        height: 450px;
+        margin: 0px;
+    } 
+    
+    #skills{
+        max-width: 90%;
+    }
+
+    .skills-box{
+        padding: 20px;
+    }
+
+    .certification-box{
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .certification-box  .box{
+        width: 100vw;
+        padding: 20px;
+    }
+
+    .project-container{
+        grid-template-columns: 1fr ;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .project-container .project-card{
+        width: 80vw;
+    }
+    .project-container .project-card .project-link{
+         width: 61vw; 
+       
+    }
+    
+
+    .project-container .project-card .project-link img{
+        width: 60vw;
+        height: 40vw;
+    }
+
+    .project-container .project-card .project-link{
+        margin: auto;
+    }
+
+    .contact form{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer .social img{
+        margin: 20px 5px;
+    }
+
+    .footer ul{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+
+    .footer ul li{
+        margin: 10px auto;
+    }
+
+}
