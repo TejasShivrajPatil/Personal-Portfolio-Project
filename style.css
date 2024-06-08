@@ -11,6 +11,7 @@ body {
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 :root{
@@ -606,6 +607,10 @@ nav .menu-btn i{
 
 @media screen and (min-width:580px) and (max-width:1120px){
 
+    html{
+        overflow-x: hidden;
+    }
+
     header{
         width: 100vw;
     }
@@ -672,6 +677,11 @@ nav .menu-btn i{
 /* Media Query for smaller screen size devices */
 
 @media screen and (min-width:450px) and (max-width:580px){
+
+    html{
+        overflow-x: hidden;
+    }
+
     .nav-items{
         position: absolute;
         top: 90px;
@@ -764,6 +774,10 @@ nav .menu-btn i{
 /* Media Query for Samsung galaxy S8+ */
 
 @media screen and (max-width:450px){
+
+    html{
+        overflow-x: hidden;
+    }
 
     .nav-items{
         position: absolute;
